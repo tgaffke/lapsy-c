@@ -1,4 +1,10 @@
-lapsy-c
-=======
+#LAPSY C
 
-Zadania z Laboratorium w C
+Szablony programu *hello world*:
+```c
+int main() {
+  pintf("hello world\n")
+
+  return 0;
+}
+```
