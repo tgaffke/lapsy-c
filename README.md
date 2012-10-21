@@ -7,6 +7,5 @@ int main() {
   pintf("hello world\n")
 
   return 0;
-  lol
 }
 ```
