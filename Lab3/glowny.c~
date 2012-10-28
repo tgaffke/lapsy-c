@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 void hej(void);
-void wczytaj_liczbe(void);
+void wczytaj_liczbe(int *k);
 
 int main() {
   int a;
-  
   hej();
-  wczytaj_liczbe();
-  
+  wczytaj_liczbe(&a);
+  printf("podales liczbe całkowitą: %d\n", a);
   return 0;
 }
 
@@ -16,11 +15,9 @@ void hej(void) {
   printf("hello world\n");
 }
 
-void wczytaj_liczbe(void) {
-  int a;
+void wczytaj_liczbe(int *k) {
   printf("podaj liczbe całkowitą: ");
-  scanf("%d", &a);
-  printf("podałeś liczbe całkowitą: %d\n", a);
+  scanf("%d", k);
 }
 
 
