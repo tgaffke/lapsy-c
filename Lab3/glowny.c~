@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void hej(void);
+void wczytaj_liczbe(void);
+
+int main() {
+  int a;
+  
+  hej();
+  wczytaj_liczbe();
+  
+  return 0;
+}
+
+void hej(void) {
+  printf("hello world\n");
+}
+
+void wczytaj_liczbe(void) {
+  int a;
+  printf("podaj liczbe całkowitą: ");
+  scanf("%d", &a);
+  printf("podałeś liczbe całkowitą: %d\n", a);
+}
+
+
