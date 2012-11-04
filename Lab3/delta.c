@@ -16,7 +16,16 @@ int main() {
 void oblicz_pierwiastki(double a, double b, double c, double *x1, double *x2) {
   double delta;
   delta = b*b - 4*a*c;
+  if (delta > 0) {
   *x1 = (-b + sqrt(delta))/2;
   *x2 = (-b + sqrt(delta))/2;
+  } else if (delta==0) {
+  *x3 = -b/2*a;
+  } else {
+  printf("Nie ma takiego pierwiastka\n");
+  }
 }
+  
+  
+
 
